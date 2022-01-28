@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>PRACTICAL-4_40</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body  ng-app="firstappin_ajs">
+    
+    <div ng-controller="Helloworld" class="helloworld">
+        <h1>
+            {{hello.title}}
+        </h1>
+    </div>
+
+    <script>
+        //controller should be  part of module
+        angular.module("firstappin_ajs",[])
+        .controller("Helloworld",function($scope){
+            $scope.hello={}
+            // $scope.hello.title="Angular Js!"
+            $scope.hello.title="Helloworld!!!"
+        })
+    </script>
+
+<div ng-app = "form" class="tableform" >
+<h1>Fill this form and show your input also</h1>
+<table border="1">
+    <tr>
+        <td>Enter your Name: <input type = "text" ng-model = "name"></td>
+    </tr>
+
+    <tr>
+        <td>Enter your age: <input type = "text" ng-model = "age"></td>
+    </tr>
+
+    <tr>
+        <td>Enter your mobile no: <input type="text" ng-model = "mobileno"> </td>
+    </tr>
+
+    <tr>
+        <td>Emails</td>
+    </tr>
+
+    <tr>
+
+        <td>Description:email <input type="text" ng-model = "email"> </td></tr>
+    
+       <tr> <td> Description:personal1 email <input type="text" ng-model="p1_email"></td></tr>
+       <tr><td> Description:personal2 email <input type="text" ng-model="p2_email"></td></tr>
+
+    
+</table>
+
+
+<hr>
+<table border="1">
+    <tr>
+        <td>Name: {{name}} </td>
+    </tr>
+
+    <tr>
+        <td>Age : {{age}} </td>
+    </tr>
+
+    <tr>
+        <td>Mobile No: {{mobileno}} </td>
+    </tr>
+    <tr>
+        <td>Emails</td>
+    </tr>
+
+   <tr> <td>  Description:Official email  {{email}} </td></tr>
+    <tr> <td> Description:personal1 email {{p1_email}} </td></tr>
+    <tr><td> Description:personal2 email {{p2_email}} </td></tr>
+</table>
+    
+    
+ </div>
+ 
+ 
+</body>
+</html>

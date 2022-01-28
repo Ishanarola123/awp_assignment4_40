@@ -1,0 +1,22 @@
+
+        .helloworld{
+            color: red;
+            background-color: whitesmoke;
+            border:2px solid black ;
+            width: 200px;
+            padding-left: 10px;
+
+        }
+        .tableform{
+            margin-top:20px ;
+
+        }
+        table{
+            font-size: large;
+           
+        }
+        .tableform h1{
+            color: blue;
+            
+        }
+    
